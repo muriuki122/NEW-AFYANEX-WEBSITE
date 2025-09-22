@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Afyanex Medical Centre | Quality Healthcare</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container header-container">
+            <div class="logo">Afyanex <span>Medical Centre</span></div>
+            <div class="mobile-menu-btn">
+                <i class="fas fa-bars"></i>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="service.html">Services</a></li>
+                    <li><a href="health-library.html">health-library</a></li>
+                    <li><a href="Appointment.html">Appointment</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+<style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        body {
+            overflow-x: hidden;
+            color: #333;
+            background: #f8f9fa;
+        }
+        
+        /* Hero Section with Background Image */
+        .hero {
+            position: relative;
+            height: 100vh;
+            width: 100%;
+            overflow: hidden;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+       .image-background {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 120%;
+            height: 120%;
+            z-index: -1;
+            background-image: url('https://images.pexels.com/photos/5726706/pexels-photo-5726706.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            transition: background-image 0.5s ease;
+        }
+        
+        .image-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 0%;
+            background: rgba(216, 215, 214, 0.7);
+        }
+        
+        .container {
+            max-width: 1200px;
+            padding: 0 20px;
+            margin: 0 auto;
+            z-index: 1;
+        }
+        
+        .hero-content {
+            text-align: center;
+            color: white;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        
+        .hero-content h1 {
+            font-size: 3.5rem;
+            margin-bottom: 20px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+            animation: fadeInDown 1s ease-out;
+        }
+        
+        .hero-content p {
+            font-size: 1.2rem;
+            margin-bottom: 30px;
+            line-height: 1.6;
+            animation: fadeInUp 1s ease-out;
+        }
+        
+        .hero-btns {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            animation: fadeIn 1.5s ease-out;
+        }
+        
+        .btn {
+            display: inline-block;
+            padding: 15px 30px;
+            background: #2a7cc7;
+            color: white;
+            text-decoration: none;
+            border-radius: 50px;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            border: 2px solid #2a7cc7;
+        }
+        
+        .btn:hover {
+            background: transparent;
+            border-color: white;
+            transform: translateY(-3px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+        }
+        
+        .btn-secondary {
+            background: transparent;
+            border: 2px solid white;
+        }
+        
+        .btn-secondary:hover {
+            background: white;
+            color: #2a7cc7;
+        }
+        
+        /* Animations */
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        
+        @keyframes fadeInUp {
+            from { 
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to { 
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
+        @keyframes fadeInDown {
+            from { 
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+            to { 
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .hero-content h1 {
+                font-size: 2.5rem;
+            }
+            
+            .hero-content p {
+                font-size: 1rem;
+            }
+            
+            .hero-btns {
+                flex-direction: column;
+                align-items: center;
+            }
+            
+            .btn {
+                width: 80%;
+                text-align: center;
+                margin-bottom: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Hero Section with Background Image -->
+    <section class="hero">
+        <div class="image-background">
+            <div class="image-overlay"></div>
+        </div>
+        
+        <div class="container">
+            <div class="hero-content">
+                <h1>Quality Healthcare, Trusted Care</h1>
+                <p>Welcome to Afyanex Medical Centre Your Health, Our Concern. We are committed to providing high-quality, patient-centered healthcare services delivered with professionalism, integrity, and compassion.</p>
+                <div class="hero-btns">
+                    <a href="appointment.html" class="btn">Book an Appointment</a>
+                    <a href="contact.html" class="btn btn-secondary">Contact Us</a>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
+
+    <!-- About Section -->
+    <section class="section about">
+        <div class="container">
+            <h2 class="section-title">About Us</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <h3>Our Vision</h3>
+                    <p>To be a leading medical institution recognized for quality care and innovative healthcare solutions.</p>
+                    
+                    <h3>Our Mission</h3>
+                    <p>To deliver patient-centered healthcare with compassion, integrity, and excellence.</p>
+                    
+                    <h3>Brief History</h3>
+                    <p>Afyanex Medical Centre was founded with the vision of making quality healthcare accessible and affordable to all. Our commitment to patient welfare has made us a trusted provider in Bungoma and beyond.</p>
+                    <a href="about.html" class="btn">Learn More</a>
+                </div>
+                <div class="about-image">
+                    <img src="https://images.unsplash.com/photo-1532938911079-1b06ac7ceec7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1080&q=80" alt="Modern medical facility">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="section services">
+        <div class="container">
+            <h2 class="section-title">Our Services</h2>
+            <p style="text-align: center;">We offer a comprehensive range of healthcare services to meet all your medical needs.</p>
+            
+            <div class="services-grid">
+                <div class="service-card">
+                    <i class="fas fa-stethoscope"></i>
+                    <h3>General Outpatient</h3>
+                    <p>Comprehensive medical consultations and treatment for all ages with our experienced physicians.</p>
+                </div>
+                <div class="service-card">
+                    <i class="fas fa-flask"></i>
+                    <h3>Diagnostic Laboratory</h3>
+                    <p>Accurate and timely laboratory tests including hematology, biochemistry, microbiology and more.</p>
+                </div>
+                <div class="service-card">
+                    <i class="fas fa-pills"></i>
+                    <h3>Pharmaceutical Services</h3>
+                    <p>Fully stocked pharmacy with quality medications and professional pharmaceutical advice.</p>
+                </div>
+                <div class="service-card">
+                    <i class="fas fa-baby"></i>
+                    <h3>Maternal & Child Health</h3>
+                    <p>Antenatal care, postnatal care, child immunization, and pediatric services.</p>
+                </div>
+            </div>
+            <div style="text-align: center; margin-top: 40px;">
+                <a href="service.html" class="btn">View All Services</a>
+            </div>
+        </div>
+    </section>
+ 
+    <!-- Team Section -->
+    <section class="section team">
+        <div class="container">
+            <h2 class="section-title">Our Medical Team</h2>
+            <p style="text-align: center; margin-bottom: 40px;">Meet our dedicated team of healthcare professionals committed to your wellbeing.</p>
+            
+            <div class="team-grid">
+                <div class="team-member">
+                    <div class="member-image">
+                        <img src="images/sharon.jpg" alt="Sharon muthumbi gachuhi">
+                    </div>
+                    <div class="member-info">
+                        <h3>C.E.O Sharon</h3>
+                        <p>CEO & Lead Physician</p>
+                    </div>
+                </div>
+                <div class="team-member">
+                    <div class="member-image">
+                        <img src="images/terry kuria.jpg" alt="Dr. Terry Kuria">
+                    </div>
+                    <div class="member-info">
+                        <h3>Dr. Terry Kuria</h3>
+                        <p>Clinical Manager</p>
+                    </div>
+                </div>
+                <div class="team-member">
+                    <div class="member-image">
+                        <img src="images/mama mandela.jpg" alt="Lucy ngure">
+                    </div>
+                    <div class="member-info">
+                        <h3>Dr.lucy wambui ngure</h3>
+                        <p>General Practitioner</p>
+                    </div>
+                </div>
+            </div>
+            <div style="text-align: center; margin-top: 40px;">
+                <a href="images/team.jpeg" class="btn">Meet Our Full Team</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="section testimonials">
+        <div class="container">
+            <h2 class="section-title">What Our Patients Say</h2>
+            <div class="testimonials-container">
+                <div class="testimonial">
+                    <div class="testimonial-content">
+                        <p>"The care I received at Afyanex was exceptional. The doctors took time to listen to my concerns and provided comprehensive treatment."</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <h4>James Mulama</h4>
+                        <p>Patient</p>
+                    </div>
+                </div>
+                <div class="testimonial">
+                    <div class="testimonial-content">
+                        <p>"The maternity services are top-notch. I felt supported throughout my pregnancy and delivery. Thank you, Afyanex team!"</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <h4>Mary Atieno</h4>
+                        <p>New Mother</p>
+                    </div>
+                </div>
+                <div class="testimonial">
+                    <div class="testimonial-content">
+                        <p>"The laboratory services are fast and accurate. I got my test results the same day, which helped in starting my treatment immediately."</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <h4>Robert Omondi</h4>
+                        <p>Patient</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Appointment CTA Section -->
+    <section class="section appointment-cta">
+        <div class="container">
+            <h2 class="section-title">Ready to Book an Appointment?</h2>
+            <p style="text-align: center; margin-bottom: 30px; color: #fff;">Schedule your visit with our healthcare professionals today</p>
+            <div style="text-align: center;">
+                <a href="appointment.html" class="btn">Book Now</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-container">
+                <div class="footer-col">
+                    <h3>About Afyanex</h3>
+                    <p>Afyanex Medical Centre is committed to providing high-quality, patient-centered healthcare services with professionalism, integrity, and compassion.</p>
+                    <p>Your Health, Our Concern.</p>
+                </div>
+                <div class="footer-col">
+                    <h3>Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="service.html">Our Services</a></li>
+                        <li><a href="health-library.html">health-library</a></li>
+                        <li><a href="appointment.html">Book Appointment</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>Our Services</h3>
+                    <ul class="footer-links">
+                        <li><a href="service.html">General Outpatient</a></li>
+                        <li><a href="service.html">Laboratory Services</a></li>
+                        <li><a href="service.html">Maternal Health</a></li>
+                        <li><a href="service.html">Child Health</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>Contact Info</h3>
+                    <p><i class="fas fa-map-marker-alt"></i> Muteremko, Bungoma Opp Slaughter House</p>
+                    <p><i class="fas fa-phone-alt"></i> 0759 887 759</p>
+                    <p><i class="fas fa-envelope"></i> afyanexmedicalcentre@gmail.com</p>
+                    <p><i class="fas fa-clock"></i> Open 24/7 for emergencies</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 Afyanex Medical Centre. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- AI Chatbot -->
+    <div class="chatbot-container">
+        <div class="chatbot-header">
+            <h3>Medical Assistant</h3>
+            <span class="close-chatbot"><i class="fas fa-times"></i></span>
+        </div>
+        <div class="chatbot-messages">
+            <div class="message bot-message">
+                <p>Hello! I'm your medical assistant. How can I help you today?</p>
+            </div>
+        </div>
+        <div class="chatbot-input">
+            <input type="text" placeholder="Type your message here...">
+            <button><i class="fas fa-paper-plane"></i></button>
+        </div>
+    </div>
+    <div class="chatbot-toggler">
+        <i class="fas fa-comment-medical"></i>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
