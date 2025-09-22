@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Appointment - Afyanex Medical Centre</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="appointment-page">
+    <!-- Header -->
+    <header class="appointment-header">
+        <div class="container header-container">
+            <div class="logo">Afyanex <span>Medical Centre</span></div>
+            <div class="mobile-menu-btn">
+                <i class="fas fa-bars"></i>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="service.html">Services</a></li>
+                    <li><a href="health-library.html">health-library</a></li>
+                    <li><a href="Appointment.html" class="active">Appointment</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Appointment Hero Section -->
+    <section class="appointment-hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Book Your Appointment</h1>
+                <p>Schedule your visit with our healthcare professionals easily and conveniently</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Appointment Section -->
+    <section class="appointment-section">
+        <div class="container">
+            <div class="appointment-container">
+                <div class="appointment-form-container">
+                    <h2>Schedule Your Visit</h2>
+                    <p class="form-intro">Fill out the form below to request an appointment. We'll confirm your booking via WhatsApp.</p>
+                    
+                    <form id="bookingForm" class="appointment-form">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="name">Full Name *</label>
+                                <input type="text" id="name" name="name" required placeholder="Enter your full name">
+                            </div>
+                            <div class="form-group">
+                                <label for="phone">Phone Number *</label>
+                                <input type="tel" id="phone" name="phone" required placeholder="Enter your phone number">
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="email">Email Address</label>
+                            <input type="email" id="email" name="email" placeholder="Enter your email address">
+                        </div>
+                        
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="date">Preferred Date *</label>
+                                <input type="date" id="date" name="date" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="time">Preferred Time *</label>
+                                <select id="time" name="time" required>
+                                    <option value="">Select time</option>
+                                    <option value="08:00-09:00">8:00 AM - 9:00 AM</option>
+                                    <option value="09:00-10:00">9:00 AM - 10:00 AM</option>
+                                    <option value="10:00-11:00">10:00 AM - 11:00 AM</option>
+                                    <option value="11:00-12:00">11:00 AM - 12:00 PM</option>
+                                    <option value="12:00-13:00">12:00 PM - 1:00 PM</option>
+                                    <option value="13:00-14:00">1:00 PM - 2:00 PM</option>
+                                    <option value="14:00-15:00">2:00 PM - 3:00 PM</option>
+                                    <option value="15:00-16:00">3:00 PM - 4:00 PM</option>
+                                    <option value="16:00-17:00">4:00 PM - 5:00 PM</option>
+                                    <option value="17:00-18:00">5:00 PM - 6:00 PM</option>
+                                </select>
+                            </div>
+                        </div>
+                        
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="service">Service Required *</label>
+                                <select id="service" name="service" required>
+                                    <option value="">Select a service</option>
+                                    <option value="General Consultation">General Consultation</option>
+                                    <option value="Laboratory Tests">Laboratory Tests</option>
+                                    <option value="Maternal Health">Maternal Health</option>
+                                    <option value="Child Health">Child Health</option>
+                                    <option value="Health Screening">Health Screening</option>
+                                    <option value="Vaccination">Vaccination</option>
+                                    <option value="Chronic Disease Management">Chronic Disease Management</option>
+                                    <option value="Other">Other</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="doctor">Preferred Doctor (optional)</label>
+                                <select id="doctor" name="doctor">
+                                    <option value="">No preference</option>
+                                    <option value="Dr. Jesse Gitaka">Dr. Jesse Gitaka</option>
+                                    <option value="Dr. Terry Kuria">Dr. Terry Kuria</option>
+                                    <option value="Dr. Sarah Nekesa">Dr. Sarah Nekesa</option>
+                                    <option value="Dr. Jezreel Isaac">Dr. Jezreel Isaac</option>
+                                </select>
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="message">Additional Information</label>
+                            <textarea id="message" name="message" rows="4" placeholder="Any specific concerns or details we should know about?"></textarea>
+                        </div>
+                        
+                        <div class="form-submit">
+                            <button type="submit" class="btn btn-primary">
+                                <i class="https://web.whatsapp.com/"></i> Book via WhatsApp
+                            </button>
+                            <p class="form-note">By submitting, you'll be redirected to WhatsApp to confirm your appointment</p>
+                        </div>
+                    </form>
+                </div>
+                
+                <div class="appointment-info">
+                    <div class="info-card">
+                        <div class="info-icon">
+                            <i class="fas fa-info-circle"></i>
+                        </div>
+                        <h3>What to Expect</h3>
+                        <ul>
+                            <li>Confirmation within 24 hours</li>
+                            <li>Reminder sent day before appointment</li>
+                            <li>Please arrive 15 minutes early</li>
+                            <li>Bring your ID and insurance card if applicable</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="contact-methods">
+                        <h3>Other Ways to Book</h3>
+                        
+                        <div class="contact-option">
+                            <div class="contact-icon">
+                                <i class="fas fa-phone-alt"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h4>Call Us Directly</h4>
+                                <p>0759 887 759</p>
+                                <span>Available 24/7 for emergencies</span>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-option">
+                            <div class="contact-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h4>Email Us</h4>
+                                <p>afyanexmedicalcentre@gmail.com</p>
+                                <span>Response within 24 hours</span>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-option">
+                            <div class="contact-icon">
+                                <i class="fas fa-walking"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h4>Walk In</h4>
+                                <p>Visit our reception</p>
+                                <span>Outpatient: 8 AM - 8 PM daily</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="appointment-footer">
+        <div class="container">
+            <div class="footer-container">
+                <div class="footer-col">
+                    <h3>Afyanex Medical Centre</h3>
+                    <p>Your Health, Our Concern. Providing quality healthcare with compassion and excellence.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="https://web.whatsapp.com/" class="whatsapp-link"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+
+                <div class="footer-col">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">about</a></li>
+                        <li><a href="service.html">Services</a></li>
+                        <li><a href="health-library.html">Health Library</a></li>
+                        <li><a href="Appointment.html">appointment</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                   </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h3>Contact Us</h3>
+                    <p><i class="fas fa-map-marker-alt"></i> Muteremko, Bungoma Opp Slaughter House</p>
+                    <p><i class="fas fa-phone"></i> 0759 887 759</p>
+                    <p><i class="fas fa-envelope"></i> afyanexmedicalcentre@gmail.com</p>
+                    <p><i class="fas fa-clock"></i> Open 24/7 for emergencies</p>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2023 Afyanex Medical Centre. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Confirmation Modal -->
+    <div class="modal" id="confirmationModal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <div class="modal-icon">
+                <i class="fas fa-check-circle"></i>
+            </div>
+            <h2>Appointment Request Sent!</h2>
+            <p>We've received your appointment request and will contact you shortly to confirm.</p>
+            <p>You'll be redirected to WhatsApp to complete the booking process.</p>
+            <div class="modal-actions">
+                <button class="btn btn-primary" id="https://web.whatsapp.com/">Continue to WhatsApp</button>
+                <button class="btn btn-secondary" id="closeModal">Close</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

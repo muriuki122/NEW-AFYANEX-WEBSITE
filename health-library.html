@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Health Library - Afyanex Medical Centre</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="health-library-page">
+    <!-- Header -->
+    <header class="health-library-header">
+        <div class="container header-container">
+            <div class="logo">Afyanex <span>Medical Centre</span></div>
+            <div class="mobile-menu-btn">
+                <i class="fas fa-bars"></i>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="service.html">Services</a></li>
+                    <li><a href="health-library.html" class="active">Health Library</a></li>
+                    <li><a href="Appointment.html">Appointment</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Health Library Hero Section -->
+    <section class="health-library-hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Health Library</h1>
+                <p>Your comprehensive guide to health conditions, treatments, and preventive care</p>
+                
+            </div>
+        </div>
+    </section>
+
+    <!-- Health Categories Section -->
+    <section class="health-categories">
+        <div class="container">
+            <h2>Browse Health Information</h2>
+            <div class="categories-grid">
+                <div class="category-card" data-category="general">
+                    <div class="category-icon">
+                        <i class="fas fa-heartbeat"></i>
+                    </div>
+                    <h3>General Health</h3>
+                    <p>Learn about maintaining good health and preventing diseases</p>
+                </div>
+                
+                <div class="category-card" data-category="infectious">
+                    <div class="category-icon">
+                        <i class="fas fa-virus"></i>
+                    </div>
+                    <h3>Infectious Diseases</h3>
+                    <p>Malaria, Typhoid, UTIs, Respiratory infections and more</p>
+                </div>
+                
+                <div class="category-card" data-category="chronic">
+                    <div class="category-icon">
+                        <i class="fas fa-stethoscope"></i>
+                    </div>
+                    <h3>Chronic Conditions</h3>
+                    <p>Diabetes, Hypertension, Arthritis, Asthma management</p>
+                </div>
+                
+                <div class="category-card" data-category="maternal">
+                    <div class="category-icon">
+                        <i class="fas fa-baby"></i>
+                    </div>
+                    <h3>Maternal & Child Health</h3>
+                    <p>Pregnancy, childcare, immunizations, and development</p>
+                </div>
+                
+                <div class="category-card" data-category="prevention">
+                    <div class="category-icon">
+                        <i class="fas fa-shield-virus"></i>
+                    </div>
+                    <h3>Prevention & Screening</h3>
+                    <p>Vaccinations, health checks, and early detection</p>
+                </div>
+                
+                <div class="category-card" data-category="nutrition">
+                    <div class="category-icon">
+                        <i class="fas fa-apple-alt"></i>
+                    </div>
+                    <h3>Nutrition & Lifestyle</h3>
+                    <p>Healthy eating, exercise, and wellness tips</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Common Conditions Section -->
+    <section class="common-conditions">
+        <div class="container">
+            <h2>Common Conditions We Treat</h2>
+            <p class="section-intro">Learn about symptoms, treatments, and when to seek medical help</p>
+            
+            <div class="conditions-grid">
+                <div class="condition-card">
+                    <div class="condition-header">
+                        <h3>Malaria</h3>
+                        <span class="severity-indicator moderate">Moderate</span>
+                    </div>
+                    <div class="condition-content">
+                        <h4>Symptoms</h4>
+                        <ul>
+                            <li>Fever and chills</li>
+                            <li>Headache and body aches</li>
+                            <li>Fatigue and weakness</li>
+                            <li>Nausea and vomiting</li>
+                        </ul>
+                        <h4>Treatment at Afyanex</h4>
+                        <p>We provide rapid diagnostic testing and effective antimalarial medications based on test results.</p>
+                        <div class="action-buttons">
+                            <a href="Appointment.html" class="btn-appointment">Book Appointment</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="condition-card">
+                    <div class="condition-header">
+                        <h3>Hypertension</h3>
+                        <span class="severity-indicator serious">Serious</span>
+                    </div>
+                    <div class="condition-content">
+                        <h4>Symptoms</h4>
+                        <ul>
+                            <li>Often no symptoms</li>
+                            <li>Headaches</li>
+                            <li>Shortness of breath</li>
+                            <li>Nosebleeds (rare)</li>
+                        </ul>
+                        <h4>Treatment at Afyanex</h4>
+                        <p>Comprehensive blood pressure monitoring, lifestyle counseling, and medication management.</p>
+                        <div class="action-buttons">
+                            <a href="Appointment.html" class="btn-appointment">Book Appointment</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="condition-card">
+                    <div class="condition-header">
+                        <h3>Diabetes</h3>
+                        <span class="severity-indicator serious">Serious</span>
+                    </div>
+                    <div class="condition-content">
+                        <h4>Symptoms</h4>
+                        <ul>
+                            <li>Increased thirst and hunger</li>
+                            <li>Frequent urination</li>
+                            <li>Unexplained weight loss</li>
+                            <li>Fatigue and blurred vision</li>
+                        </ul>
+                        <h4>Treatment at Afyanex</h4>
+                        <p>Blood sugar monitoring, dietary planning, medication management, and complication screening.</p>
+                        <div class="action-buttons">
+                            <a href="Appointment.html" class="btn-appointment">Book Appointment</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="condition-card">
+                    <div class="condition-header">
+                        <h3>Respiratory Infections</h3>
+                        <span class="severity-indicator mild">Mild-Moderate</span>
+                    </div>
+                    <div class="condition-content">
+                        <h4>Symptoms</h4>
+                        <ul>
+                            <li>Cough and congestion</li>
+                            <li>Sore throat</li>
+                            <li>Fever</li>
+                            <li>Shortness of breath</li>
+                        </ul>
+                        <h4>Treatment at Afyanex</h4>
+                        <p>Accurate diagnosis, appropriate antibiotics when needed, and symptomatic relief treatments.</p>
+                        <div class="action-buttons">
+                            <a href="Appointment.html" class="btn-appointment">Book Appointment</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="condition-card">
+                    <div class="condition-header">
+                        <h3>UTI (Urinary Tract Infection)</h3>
+                        <span class="severity-indicator moderate">Moderate</span>
+                    </div>
+                    <div class="condition-content">
+                        <h4>Symptoms</h4>
+                        <ul>
+                            <li>Burning sensation when urinating</li>
+                            <li>Frequent urination</li>
+                            <li>Cloudy or strong-smelling urine</li>
+                            <li>Pelvic pain</li>
+                        </ul>
+                        <h4>Treatment at Afyanex</h4>
+                        <p>Urine testing, appropriate antibiotic therapy, and prevention strategies.</p>
+                        <div class="action-buttons"></div>
+                            <a href="Appointment.html" class="btn-appointment">Book Appointment</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="condition-card">
+                    <div class="condition-header">
+                        <h3>Gastrointestinal Issues</h3>
+                        <span class="severity-indicator mild">Mild-Serious</span>
+                    </div>
+                    <div class="condition-content">
+                        <h4>Symptoms</h4>
+                        <ul>
+                            <li>Abdominal pain or cramps</li>
+                            <li>Diarrhea or constipation</li>
+                            <li>Nausea and vomiting</li>
+                            <li>Bloating</li>
+                        </ul>
+                        <h4>Treatment at Afyanex</h4>
+                        <p>Comprehensive evaluation, laboratory testing, and targeted treatment plans.</p>
+                        <div class="action-buttons"></div>
+                            <a href="Appointment.html" class="btn-appointment">Book Appointment</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Critical Conditions Section -->
+    <section class="critical-conditions">
+        <div class="container">
+            <h2>When to Seek Immediate Medical Attention</h2>
+            <div class="warning-box">
+                <div class="warning-icon">
+                    <i class="fas fa-exclamation-triangle"></i>
+                </div>
+                <div class="warning-content">
+                    <h3>Emergency Warning Signs</h3>
+                    <p>If you or someone you know experiences any of these symptoms, seek medical help immediately:</p>
+                    <div class="warning-list">
+                        <div class="warning-item">
+                            <i class="fas fa-chevron-right"></i>
+                            <span>Chest pain or pressure</span>
+                        </div>
+                        <div class="warning-item">
+                            <i class="fas fa-chevron-right"></i>
+                            <span>Difficulty breathing or shortness of breath</span>
+                        </div>
+                        <div class="warning-item">
+                            <i class="fas fa-chevron-right"></i>
+                            <span>Severe abdominal pain</span>
+                        </div>
+                        <div class="warning-item">
+                            <i class="fas fa-chevron-right"></i>
+                            <span>Sudden weakness or numbness</span>
+                        </div>
+                        <div class="warning-item">
+                            <i class="fas fa-chevron-right"></i>
+                            <span>Confusion or difficulty speaking</span>
+                        </div>
+                        <div class="warning-item">
+                            <i class="fas fa-chevron-right"></i>
+                            <span>Uncontrolled bleeding</span>
+                        </div>
+                        <div class="warning-item">
+                            <i class="fas fa-chevron-right"></i>
+                            <span>Seizures or convulsions</span>
+                        </div>
+                        <div class="warning-item">
+                            <i class="fas fa-chevron-right"></i>
+                            <span>High fever with stiff neck or rash</span>
+                        </div>
+                    </div>
+                    <div class="emergency-contact">
+                        <p><strong>Call us immediately: 0759 887 759</strong></p>
+                        <p>Our emergency services are available 24/7</p>
+                        <a href="contact.html" class="btn-emergency">Get Directions to Afyanex</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Afyanex Services Overview -->
+    <section class="afyanex-services-overview">
+        <div class="container">
+            <h2>Comprehensive Healthcare at Afyanex</h2>
+            <div class="services-overview-grid">
+                <div class="service-overview-card">
+                    <div class="service-icon">
+                        <i class="fas fa-user-md"></i>
+                    </div>
+                    <h3>General Consultation</h3>
+                    <p>Expert medical consultations for all ages with our experienced physicians.</p>
+                    <ul>
+                        <li>Comprehensive health assessments</li>
+                        <li>Chronic disease management</li>
+                        <li>Preventive health counseling</li>
+                    </ul>
+                </div>
+                
+                <div class="service-overview-card">
+                    <div class="service-icon">
+                        <i class="fas fa-microscope"></i>
+                    </div>
+                    <h3>Laboratory Services</h3>
+                    <p>Accurate diagnostic testing with quick results.</p>
+                    <ul>
+                        <li>Blood tests and urinalysis</li>
+                        <li>Malaria and typhoid testing</li>
+                        <li>Diabetes and cholesterol screening</li>
+                    </ul>
+                </div>
+                
+                <div class="service-overview-card">
+                    <div class="service-icon">
+                        <i class="fas fa-baby"></i>
+                    </div>
+                    <h3>Maternal & Child Health</h3>
+                    <p>Comprehensive care for mothers and children.</p>
+                    <ul>
+                        <li>Antenatal and postnatal care</li>
+                        <li>Child immunizations</li>
+                        <li>Growth monitoring</li>
+                    </ul>
+                </div>
+                
+                <div class="service-overview-card">
+                    <div class="service-icon">
+                        <i class="fas fa-pills"></i>
+                    </div>
+                    <h3>Pharmacy Services</h3>
+                    <p>Fully stocked pharmacy with quality medications.</p>
+                    <ul>
+                        <li>Prescription medications</li>
+                        <li>Over-the-counter drugs</li>
+                        <li>Pharmaceutical counseling</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Health Tips Section -->
+    <section class="health-tips">
+        <div class="container">
+            <h2>Health & Wellness Tips</h2>
+            <div class="tips-grid">
+                <div class="tip-card">
+                    <div class="tip-icon">
+                        <i class="fas fa-hand-holding-water"></i>
+                    </div>
+                    <h3>Stay Hydrated</h3>
+                    <p>Drink at least 8 glasses of water daily to maintain proper body function.</p>
+                </div>
+                
+                <div class="tip-card">
+                    <div class="tip-icon">
+                        <i class="fas fa-utensils"></i>
+                    </div>
+                    <h3>Eat Balanced Meals</h3>
+                    <p>Include fruits, vegetables, whole grains, and lean proteins in your diet.</p>
+                </div>
+                
+                <div class="tip-card">
+                    <div class="tip-icon">
+                        <i class="fas fa-walking"></i>
+                    </div>
+                    <h3>Exercise Regularly</h3>
+                    <p>Aim for 30 minutes of moderate activity most days of the week.</p>
+                </div>
+                
+                <div class="tip-card">
+                    <div class="tip-icon">
+                        <i class="fas fa-bed"></i>
+                    </div>
+                    <h3>Get Enough Sleep</h3>
+                    <p>7-9 hours of quality sleep supports physical and mental health.</p>
+                </div>
+                
+                <div class="tip-card">
+                    <div class="tip-icon">
+                        <i class="fas fa-smile"></i>
+                    </div>
+                    <h3>Manage Stress</h3>
+                    <p>Practice relaxation techniques and maintain social connections.</p>
+                </div>
+                
+                <div class="tip-card">
+                    <div class="tip-icon">
+                        <i class="fas fa-syringe"></i>
+                    </div>
+                    <h3>Stay Up-to-Date on Vaccinations</h3>
+                    <p>Protect yourself and others from preventable diseases.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Need Medical Advice or Treatment?</h2>
+                <p>Our healthcare professionals are here to help you with accurate diagnosis and effective treatment.</p>
+                <div class="cta-buttons">
+                    <a href="Appointment.html" class="btn btn-primary">Book an Appointment</a>
+                    <a href="contact.html" class="btn btn-secondary">Contact Us</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="health-library-footer">
+        <div class="container">
+            <div class="footer-container">
+                <div class="footer-col">
+                    <h3>Afyanex Medical Centre</h3>
+                    <p>Your Health, Our Concern. Providing quality healthcare with compassion and excellence.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="https://wa.me/254759887759" class="whatsapp-link"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+
+                <div class="footer-col">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">about</a></li>
+                        <li><a href="service.html">Services</a></li>
+                        <li><a href="health-library.html">Health Library</a></li>
+                        <li><a href="Appointment.html">appointment</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h3>Contact Us</h3>
+                    <p><i class="fas fa-map-marker-alt"></i> Muteremko, Bungoma Opp Slaughter House</p>
+                    <p><i class="fas fa-phone"></i> 0759 887 759</p>
+                    <p><i class="fas fa-envelope"></i> afyanexmedicalcentre@gmail.com</p>
+                    <p><i class="fas fa-clock"></i> Open 24/7 for emergencies</p>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2023 Afyanex Medical Centre. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Condition Detail Modal -->
+    <div class="modal" id="conditionModal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <div class="modal-header">
+                <h2 id="modalTitle">Condition Title</h2>
+                <p class="condition-meta" id="modalMeta">Severity Level</p>
+            </div>
+            <div class="modal-body" id="modalBody">
+                <!-- Condition content will be inserted here -->
+            </div>
+            <div class="modal-actions">
+                <a href="Appointment.html" class="btn btn-primary">Book Appointment</a>
+                <button class="btn btn-secondary" id="closeConditionModal">Close</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="health-library.js"></script>
+</body>
+</html>
